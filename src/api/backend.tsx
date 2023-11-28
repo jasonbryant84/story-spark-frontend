@@ -8,7 +8,7 @@ if (port) {
 
 export const createSession = async () => {
     const url = 'https://story-spark-backend-4619e967ec9f.herokuapp.com'
-    console.log('createSession (url is):', url)
+    console.log('createSession (host is):', host)
     return await fetch(`${url}/api/create-session`, { // was ${host}
         method: 'POST'
     }).then(async (resp) => {
